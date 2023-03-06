@@ -1,13 +1,42 @@
 .border-botom-primary {
     border-bottom: 20px solid $clr-primary;
+
 }
 
 .banner {
     background-image: url("/img/banner.jpg");
     background-repeat: no-repeat;
+    background-color: gray;
+    background-blend-mode: multiply;
     background-size: cover;
     height: 80vh;
+    text-align: center;
+    color: $clr-white;
+
+    hr {
+        width: 30%;
+        margin: 2rem auto;
+    }
+
+    h2 {
+        font-size: clamp(2rem, 3vw, 3rem);
+    }
+
+    h3 {
+        font-size: clamp(1.5rem, 2vw, 2rem);
+
+    }
 
 }
 
+    .services {
+        color: $clr-gray;
+        padding: 6rem 0;
+        &__wrapper {
+            @include grid(3, 2rem);
+            @include mediaQuery(){
+                @include grid(1, 2rem);
+            }
+        }
 
+    }
