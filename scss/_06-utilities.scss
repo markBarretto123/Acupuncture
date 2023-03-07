@@ -1,24 +1,27 @@
 $color: (
-    "primary": $clr-primary,
-    "dark": $clr-black,
-    "light": $clr-white,
-    "gray": $clr-gray,
+  "primary": $clr-primary,
+  "dark": $clr-black,
+  "light": $clr-white,
+  "gray": $clr-gray,
 );
 
-@each $key, $val in $color {
-    .bg {
-        &--#{$key}{
-            background-color: $val;
-        }
+@each $key,
+$val in $color {
+  .bg {
+    &--#{$key} {
+      background-color: $val;
     }
-    .text{
-        &--#{$key}{
-            color: $val;
-        }
+  }
+
+  .text {
+    &--#{$key} {
+      color: $val;
     }
-    .btn.bg--#{$key}{
-      @include btn($val);
-    }
+  }
+
+  .btn.bg--#{$key} {
+    @include btn($val);
+  }
 }
 
 $align: (
@@ -28,7 +31,8 @@ $align: (
   "justify": justify,
 );
 
-@each $key, $val in $align {
+@each $key,
+$val in $align {
   .text {
     &--#{$key} {
       text-align: $val;
@@ -44,7 +48,8 @@ $justify: (
   "around": space-around,
 );
 
-@each $key, $val in $justify {
+@each $key,
+$val in $justify {
   .justify {
     &--#{$key} {
       justify-content: $val;
@@ -53,6 +58,7 @@ $justify: (
 }
 
 $displays: flex, grid, block, inline-block, inline;
+
 @each $display in $displays {
   .d--#{$display} {
     display: $display;
@@ -65,7 +71,8 @@ $alignments: (
   "end": flex-end,
 );
 
-@each $key, $val in $alignments {
+@each $key,
+$val in $alignments {
   .align {
     &--#{$key} {
       align-items: $val;
@@ -73,8 +80,8 @@ $alignments: (
   }
 }
 
-@for $i from 1 through 10{
-    .mb--#{$i}{
-      margin-bottom: $i + 1rem;
-    }
+@for $i from 1 through 10 {
+  .mb--#{$i} {
+    margin-bottom: $i + 1rem;
+  }
 }

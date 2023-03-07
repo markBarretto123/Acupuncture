@@ -1,204 +1,245 @@
-.border-bottom-primary{
+.border-bottom-primary {
     border-bottom: 20px solid $clr-primary;
-    
+
 }
-.banner{
+
+.banner {
     background-image: url("/img/banner.jpg");
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    color: $clr-white;  
+    color: $clr-white;
     background-color: gray;
     background-blend-mode: multiply;
-    hr{
+
+    hr {
         width: 30%;
         margin: 2rem auto;
     }
-    h2{
-        font-size: clamp(2rem ,3vw, 3rem);
+
+    h2 {
+        font-size: clamp(2rem, 3vw, 3rem);
     }
-    h3{
-        font-size: clamp(1.5rem ,2vw, 2rem);  
+
+    h3 {
+        font-size: clamp(1.5rem, 2vw, 2rem);
     }
-}   
-.services{
+}
+
+.services {
     padding: 5rem 0;
     color: $clr-gray;
-    &__wrapper{
+
+    &__wrapper {
         @include grid(3, 2rem);
+
         @include mediaQuery() {
             @include grid(1, 2rem);
         }
     }
-    h2{
-        font-size: clamp(2.3rem ,1.5vw, 1rem);
+
+    h2 {
+        font-size: clamp(2.3rem, 1.5vw, 1rem);
     }
-    h3{
-        font-size: clamp(1.5rem ,1.5vw, 1.5rem);
+
+    h3 {
+        font-size: clamp(1.5rem, 1.5vw, 1.5rem);
     }
-    p{
+
+    p {
         font-size: 20px;
         padding: 0 7rem 0 7rem;
     }
 }
-.services__type p{
+
+.services__type p {
     font-size: 13px;
     padding: 0 5rem 0 5rem;
     margin-top: 10px;
 }
-.offer{
+
+.Offers {
     padding: 3rem 0 4rem;
     background-color: $clr-gray;
     text-align: center;
-    &__wrapper{
-        h2{
+
+    &__wrapper {
+        h2 {
             padding: 1.5rem;
-            font-size: 3rem;
+            font-size: 2rem;
             color: $clr-white;
         }
     }
 }
-.founderCeo{
+
+.Founder {
     padding: 5rem;
-    &__wrapper{
-        @include mediaQuery() {
-            @include grid(1, 3rem);
-            justify-content: center;
-        }
-        h2{
-            font-size: 40px;
-            margin-bottom: 1rem;
-        }
-        p{
-            margin-bottom: 8rem;
-            font-size: 19px;
-        }
+
+    h2 {
+        font-size: 40px;
+        margin-bottom: 1rem;
     }
+
+    p {
+        margin-bottom: 8rem;
+        font-size: 19px;
+    }
+ 
 }
 
-.founderCeo__content{
+
+.Founder__content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
 }
-.clinic{
-    background-color:rgb(234, 234, 234);
+
+.Clinic {
+    background-color: rgb(234, 234, 234);
     padding: 5rem;
-    &__wrapper{
+
+    &__wrapper {
         @include mediaQuery() {
             @include grid(1, 2rem);
             justify-content: center;
         }
     }
-    h2{
+
+    h2 {
         font-size: 39px;
-         margin-bottom: 1rem;
+        margin-bottom: 1rem;
     }
-    p{
+
+    p {
         margin-bottom: 3rem;
         font-size: 19px;
     }
 }
-.clinic__content{
+
+.Clinic__content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
 }
-.names{
+
+.names {
     padding: 5rem 0;
     color: $clr-gray;
-    &__wrapper{
+
+    &__wrapper {
         @include grid(3, 2rem);
+
         @include mediaQuery() {
             @include grid(1, 2rem);
         }
     }
-    hr{
+
+    hr {
         width: 30%;
         margin: 2rem auto;
     }
-    h2{
-        font-size: clamp(1.5rem ,1.5vw, 1rem);
+
+    h2 {
+        font-size: clamp(1.5rem, 1.5vw, 1rem);
     }
-    h3{
-        font-size: clamp(0.5rem ,1.5vw, 1rem);
+
+    h3 {
+        font-size: clamp(0.5rem, 1.5vw, 1rem);
     }
-    p{
+
+    p {
         font-size: 15px;
         padding: 0 3rem 0 3rem;
     }
 }
-.faqs{
-    background-color:rgb(234, 234, 234);
+
+.freq {
+    background-color: rgb(234, 234, 234);
     padding: 5rem;
-    &__wrapper{
-        h2{
+
+    &__wrapper {
+        h2 {
             font-size: 40px;
         }
-        p{
+
+        p {
             line-height: 2rem;
             margin-bottom: 2rem;
         }
     }
 }
-.faqs__qas h2{
+
+.freq__qas h2 {
     padding-top: 1.5rem;
     padding-bottom: 0.5rem;
     font-size: 20px;
 }
-.information{
+
+.info {
     padding: 5rem;
     background-color: $clr-gray;
-    &__wrapper{
+
+    &__wrapper {
         @include grid(2, 2rem);
+
         @include mediaQuery() {
             @include grid(1, 2rem);
             justify-content: center;
         }
     }
-    hr{
+
+    hr {
         width: 65%;
         margin: 2rem auto;
         border: 1px solid $clr-primary;
     }
-    img{
+
+    img {
         height: 450px;
         width: 700px;
     }
-    p{
+
+    p {
         display: grid;
         padding: 0 5rem 0 5rem;
         color: $clr-white;
     }
-    h2{
+
+    h2 {
         padding: 0 5rem 0 5rem;
         font-size: 30px;
         color: $clr-white;
     }
-    h3{
+
+    h3 {
         color: $clr-white;
     }
 }
-.information__content{
+
+.info__content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.link{
+
+.link {
     padding: 5rem;
     background-color: $clr-primary;
-    &__wrapper{
 
-    }
-    h3{
+    h3 {
         color: $clr-white;
     }
-}
-.link__content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p {
+        color: $clr-white;
+    }
 }
